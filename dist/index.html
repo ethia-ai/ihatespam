@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://accounts.google.com; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://accounts.google.com https://oauth2.googleapis.com https://gmail.googleapis.com https://login.microsoftonline.com https://graph.microsoft.com; frame-src https://accounts.google.com https://login.microsoftonline.com; object-src 'none'; base-uri 'none'; form-action 'self' https:; upgrade-insecure-requests" />
+    <meta name="referrer" content="no-referrer" />
+    <meta name="description" content="Clean up newsletters and spam privately, without us storing your emails." />
+    <meta name="theme-color" content="#f5f2ea" />
+    <meta property="og:title" content="I Hate Spam — Your inbox is full of emails you never asked for." />
+    <meta property="og:description" content="Deep inbox cleanup and lasting protection for Gmail and Outlook, with local-first privacy." />
+    <meta property="og:type" content="website" />
+    <link rel="canonical" href="https://ihatespam.site" />
+    <meta property="og:url" content="https://ihatespam.site" />
+    <meta property="og:image" content="https://ihatespam.site/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="I Hate Spam — Your inbox is full of emails you never asked for." />
+    <meta name="twitter:description" content="Deep inbox cleanup and lasting protection for Gmail and Outlook, with local-first privacy." />
+    <meta name="twitter:image" content="https://ihatespam.site/og.png" />
+    <title>I Hate Spam — Clean and protect your inbox</title>
+    <link rel="icon" type="image/png" href="./oauth-app-icon.png" />
+    <link rel="stylesheet" href="./styles.css?v=credit-20261020" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="I Hate Spam, home" data-i18n-aria="brandHome">
+        <span class="brand-type"><span>I</span><span class="brand-thumb" aria-hidden="true">👎</span><span>SPAM</span></span>
+      </a>
+      <div class="header-tools"><a class="support-button support-button-header" href="https://buymeacoffee.com/ethia" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" aria-label="Buy me a Coffee" data-i18n-aria="buyMeCoffee"><span aria-hidden="true">🥹</span><span data-i18n="buyMeCoffee">Buy me a Coffee</span></a><label class="language-control"><span class="visually-hidden" data-i18n="languageLabel">Language</span><select class="language-select" aria-label="Language" data-i18n-aria="languageLabel"><option value="en">English</option><option value="pt">Português</option><option value="it">Italiano</option><option value="es">Español</option><option value="fr">Français</option><option value="de">Deutsch</option></select></label><p class="creator-credit">Created by <a href="https://ethiaagency.com" target="_blank" rel="noopener noreferrer">Ethia Agency</a></p></div>
+    </header>
+
+    <main id="landing-view">
+      <section class="welcome" aria-labelledby="welcome-title">
+        <div class="eyebrow" data-i18n="heroEyebrow">F*ck spam.</div>
+        <h1 id="welcome-title"><span data-i18n="heroTitle1">Your inbox is full of emails</span><br /><em data-i18n="heroTitle2">you never asked for.</em></h1>
+        <p class="lead" data-i18n="heroLead">Connect Gmail or Outlook, find the senders filling your inbox, unsubscribe from legitimate newsletters, and block or clear the rest. Your emails stay private and are never stored by us.</p>
+
+        <div class="provider-panel" aria-label="Choose an email account" data-i18n-aria="chooseAccount">
+          <p class="panel-label" data-i18n="connectAccount">Start by connecting an account</p>
+          <p class="free-note" data-i18n="freeNoCatch">Yes, it’s free! No catch.</p>
+          <div class="provider-grid">
+            <button class="provider-card" type="button" data-provider="gmail" aria-describedby="gmail-verification-note">
+              <span class="provider-icon gmail-icon" aria-hidden="true">M</span>
+              <span><strong><span data-i18n="continueGmail">Continue with Gmail</span> *</strong><small data-i18n="gmailAccount">Personal or work Google account</small></span>
+              <span class="arrow" aria-hidden="true">→</span>
+            </button>
+            <div class="gmail-verification-note" id="gmail-verification-note">
+              <p data-i18n="gmailVerificationNote">* We tried to verify the app with Google, but the process required a paid assessment by an independent security lab. As this is a free project to help people clear spam, we have not proceeded with that paid assessment, so this app is not verified by Google. We do not sell your personal data or read or store email bodies. See the tutorial below for how to connect Gmail when Google allows it.</p>
+              <details><summary data-i18n="gmailVerificationHelp">How to connect Gmail · Tutorial</summary><p data-i18n="gmailVerificationSteps">If Google shows an unverified-app warning and offers this option, choose “Advanced”, then “Go to I Hate Spam (unsafe)”. Google may display the site domain instead. This is your decision, not a security certification. If access is blocked or this option is absent, you cannot continue this way; try the demo or Outlook.</p>
+                <figure class="google-guide-step"><figcaption data-i18n="gmailGuideStep1">1. Review the warning. If you choose to continue, open Advanced.</figcaption><a href="./google-access-step-1.png" target="_blank" rel="noopener noreferrer"><img src="./google-access-step-1.png" alt="Google unverified-app warning: Advanced" loading="lazy" decoding="async" width="1522" height="1033"></a></figure>
+                <figure class="google-guide-step"><figcaption data-i18n="gmailGuideStep2">2. If available, use the access link only if you understand the risks and trust the project.</figcaption><a href="./google-access-step-2.png" target="_blank" rel="noopener noreferrer"><img src="./google-access-step-2.png" alt="Google unverified-app warning: Access I Hate Spam (not secure)" loading="lazy" decoding="async"></a></figure>
+              </details>
+            </div>
+            <button class="provider-card" type="button" data-provider="outlook">
+              <span class="provider-icon outlook-icon" aria-hidden="true">O</span>
+              <span><strong data-i18n="continueOutlook">Continue with Outlook</strong><small data-i18n="outlookAccount">Outlook, Hotmail or Microsoft 365</small></span>
+              <span class="arrow" aria-hidden="true">→</span>
+            </button>
+          </div>
+          <button class="demo-link" type="button" id="demo-button" data-i18n="tryDemo">Try it first with a demo inbox</button>
+        </div>
+
+        <div class="trust-row" aria-label="Privacy commitments" data-i18n-aria="privacyCommitments">
+          <span data-i18n="noPassword">No passwords</span><span data-i18n="noEmailStored">No email content stored</span><span data-i18n="approveActions">You approve every action</span>
+        </div>
+      </section>
+
+      <div class="preview-column">
+      <aside class="inbox-preview" aria-label="Analysis preview" data-i18n-aria="analysisPreview">
+        <div class="preview-top">
+          <span class="mini-label" data-i18n="analysisExample">ANALYSIS EXAMPLE</span>
+          <span class="safe-badge" data-i18n="private">Private</span>
+        </div>
+        <div class="score-row">
+          <div><strong data-number="1247">1,247</strong><span data-i18n="emailsAnalysed">emails analysed</span></div>
+          <div class="clean-score"><strong>68%</strong><span data-i18n="canLeaveInbox">can leave your inbox</span></div>
+        </div>
+        <div class="mail-stack" aria-hidden="true">
+          <div class="mail-card"><span class="avatar coral">S</span><span><b>SuperOffers</b><small data-i18n="previewNeverOpened">84 messages · never opened</small></span><mark>Spam</mark></div>
+          <div class="mail-card"><span class="avatar blue">N</span><span><b>Weekly News</b><small data-i18n="previewSafeUnsubscribe">42 messages · safe unsubscribe</small></span><mark class="unsubscribe" data-i18n="leave">Leave</mark></div>
+          <div class="mail-card"><span class="avatar green">M</span><span><b>Maria Costa</b><small data-i18n="previewConversation">Conversation with replies</small></span><mark class="keep" data-i18n="protect">Protect</mark></div>
+        </div>
+        <div class="protection-note"><span aria-hidden="true">✓</span><p><b data-i18n="lastingProtection">Protection that lasts</b><br /><span data-i18n="lastingProtectionCopy">Rules remain active in Gmail or Outlook even after you close the site.</span></p></div>
+      </aside>
+        <div class="privacy-reassurance" aria-label="Privacy promise" data-i18n-aria="privacyPromise">
+          <div class="privacy-reassurance-title"><span aria-hidden="true">✓</span><strong data-i18n="privateByDesign">Private by design</strong></div>
+          <p data-i18n="privacyCopy">We don’t read or store the content of your emails. Privacy first.</p>
+        </div>
+        <div class="open-source-note">
+          <a href="https://github.com/ethia-ai/ihatespam" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" data-i18n="openSourceLink">Open source · View code on GitHub</a>
+          <p data-i18n="openSourceNote">MIT licensed. Inspect how the app works. We do not read or store message bodies. Automatic unsubscribe temporarily processes access tokens and headers on our server. Open source does not guarantee security or Google approval.</p>
+        </div>
+        <p class="legal-links"><a href="./privacy.html">Privacy Policy</a><span>·</span><a href="./terms.html">Terms of Service</a><span>·</span><a href="https://ethiaagency.com" target="_blank" rel="noopener noreferrer">by ETHIA Agency</a></p>
+      </div>
+    </main>
+
+    <section class="app-view" id="app-view" hidden aria-live="polite">
+      <header class="app-header">
+        <button class="brand brand-button" id="back-home" type="button" aria-label="Back to home" data-i18n-aria="backHome"><span class="brand-type"><span>I</span><span class="brand-thumb" aria-hidden="true">👎</span><span>SPAM</span></span></button>
+        <div class="demo-account"><span id="account-provider-icon">M</span><div><strong id="account-label" data-i18n="demoInbox">Demo inbox</strong><small id="account-provider">Gmail · fictional data</small></div></div>
+        <div class="app-header-tools"><label class="language-control"><span class="visually-hidden" data-i18n="languageLabel">Language</span><select class="language-select" aria-label="Language" data-i18n-aria="languageLabel"><option value="en">English</option><option value="pt">Português</option><option value="it">Italiano</option><option value="es">Español</option><option value="fr">Français</option><option value="de">Deutsch</option></select></label><button class="quiet-button" id="disconnect-button" type="button" data-i18n="exitDemo">Exit demo</button></div>
+      </header>
+
+      <div class="analysis-loading" id="analysis-loading">
+        <div class="scan-visual" aria-hidden="true"><span></span><span></span><span></span><i></i></div>
+        <p class="eyebrow" data-i18n="analysingLocally">Analysing locally</p>
+        <h2 data-i18n="organisingInbox">Organising your inbox without sending anything to us.</h2>
+        <p id="loading-status" data-i18n="loadingFind">Finding senders and newsletters…</p>
+        <div class="loading-track"><span id="loading-progress"></span></div>
+        <small data-i18n="fictionalDataNotice">This demo uses fictional data only.</small>
+      </div>
+
+      <section class="gmail-preview success-view" id="gmail-preview" hidden aria-labelledby="gmail-preview-title">
+        <div class="success-icon" aria-hidden="true">✓</div>
+        <p class="eyebrow" data-i18n="gmailConnectedEyebrow">Connected securely</p>
+        <h2 id="gmail-preview-title" data-i18n="gmailConnectedTitle">Your Gmail overview is ready.</h2>
+        <p id="gmail-account-copy"></p>
+        <div class="success-card gmail-stats" id="gmail-preview-stats"></div>
+        <div class="success-card gmail-senders" id="gmail-sender-preview"></div>
+        <p class="gmail-readonly-note" data-i18n="gmailReadOnlyNotice">Read-only preview: we inspected message headers only. No email body was read, stored or changed.</p>
+        <div class="gmail-preview-actions">
+          <button class="primary-button" id="open-gmail-dashboard" type="button" data-i18n="reviewAndClean">Review senders and clean up</button>
+          <button class="secondary-button" id="gmail-disconnect" type="button" data-i18n="disconnectAccount">Disconnect account</button>
+        </div>
+      </section>
+
+      <div class="dashboard" id="dashboard" hidden>
+        <div class="dashboard-intro"><div><p class="eyebrow" id="dashboard-eyebrow" data-i18n="analysisComplete">Analysis complete</p><h2 id="dashboard-title" data-i18n="inboxCanBreathe">Your inbox can breathe again.</h2><p id="dashboard-copy" data-i18n="reviewSuggestions">Review the suggestions. Nothing happens without your confirmation.</p></div></div>
+        <div class="summary-grid" aria-label="Analysis summary" data-i18n-aria="analysisSummary">
+          <article><span class="summary-icon coral-bg">↓</span><div><strong id="summary-email-count">847</strong><small id="summary-email-label" data-i18n="canLeaveSummary">can leave your inbox</small></div></article>
+          <article><span class="summary-icon green-bg">✓</span><div><strong id="summary-newsletter-count">126</strong><small id="summary-newsletter-label" data-i18n="protectedSenders">protected senders</small></div></article>
+          <article><span class="summary-icon blue-bg">?</span><div><strong id="summary-review-count">3</strong><small id="summary-review-label" data-i18n="needReview">need review</small></div></article>
+          <article><span class="summary-icon sand-bg">◎</span><div><strong id="summary-scan-count">100</strong><small id="summary-scan-label" data-i18n="latestMessages">latest messages scanned</small></div></article>
+        </div>
+        <div class="sender-panel">
+          <div class="sender-toolbar"><div><h3 data-i18n="sendersFound">Senders found</h3><p data-i18n="senderInstructions">Combine future protection with a separate action for existing emails.</p></div><div class="filter-tabs" role="group" aria-label="Filter senders" data-i18n-aria="filterSenders"><button class="active" type="button" data-filter="all" data-i18n="all">All</button><button type="button" data-filter="unsubscribe" data-i18n="newsletters">Newsletters</button><button type="button" data-filter="spam" data-i18n="suspiciousPlural">Suspicious</button><button type="button" data-filter="keep" data-i18n="relevant">Relevant</button><button type="button" data-filter="review" data-i18n="uncertain">Uncertain</button></div></div>
+          <div class="select-row"><label><input type="checkbox" id="select-all" /> <span data-i18n="selectAll">Select all</span></label><span id="visible-count">8 senders</span></div>
+          <div class="sender-list" id="sender-list"></div>
+        </div>
+        <div class="action-bar"><div><strong id="selected-summary">No action selected</strong><small id="selected-detail">Choose the senders you want to manage.</small></div><button class="primary-button compact" id="review-actions" type="button" disabled data-i18n="reviewActions">Review actions</button></div>
+      </div>
+
+      <div class="success-view" id="success-view" hidden>
+        <div class="success-icon" id="success-status-icon" aria-hidden="true">✓</div><p class="eyebrow" id="success-eyebrow" data-i18n="demoComplete">Demo complete</p><h2 id="success-title" data-i18n="lighterInbox">A lighter inbox. Protection ready.</h2><p id="success-copy"></p><div class="success-card" id="success-report"></div>
+        <div id="result-unsubscribes"></div>
+        <button class="primary-button manual-finish" id="result-manual-confirm" type="button" hidden>I’ve completed the manual unsubscribes</button>
+        <section class="share-card" id="result-share" aria-labelledby="share-title" hidden>
+          <p class="eyebrow" data-i18n="shareEyebrow">Pass it on</p>
+          <h3 id="share-title" data-i18n="shareTitle">Help someone reclaim their inbox.</h3>
+          <p data-i18n="shareCopy">Your friends probably have an inbox full of emails they never asked for too.</p>
+          <strong class="share-label" data-i18n="shareButton">Share I Hate Spam</strong>
+          <div class="share-options" role="group" aria-label="Share options" data-i18n-aria="shareOptions">
+            <a class="share-option" data-share="whatsapp" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">◔</span><span data-i18n="shareWhatsApp">WhatsApp</span></a>
+            <a class="share-option" data-share="email"><span aria-hidden="true">✉</span><span data-i18n="shareEmail">Email</span></a>
+            <a class="share-option" data-share="linkedin" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">in</span><span data-i18n="shareLinkedIn">LinkedIn</span></a>
+            <a class="share-option" data-share="x" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">𝕏</span><span data-i18n="shareX">X</span></a>
+            <button class="share-option" id="copy-share-link" type="button"><span aria-hidden="true">↗</span><span data-i18n="shareCopyLink">Copy link</span></button>
+          </div>
+          <span class="share-status" id="share-status" role="status" aria-live="polite"></span>
+        </section>
+        <section class="support-card" aria-label="Support the project" data-i18n-aria="supportProject">
+          <p data-i18n="supportCopy">This tool is free because we’re all tired of spam. Please consider supporting us so we can keep it open to everyone.</p>
+          <a class="support-button support-button-card" href="https://buymeacoffee.com/ethia" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" aria-label="Buy me a Coffee" data-i18n-aria="buyMeCoffee"><span aria-hidden="true">🥹</span><span data-i18n="buyMeCoffee">Buy me a Coffee</span></a>
+          <p class="creator-credit">Created by <a href="https://ethiaagency.com" target="_blank" rel="noopener noreferrer">Ethia Agency</a></p>
+        </section>
+        <button class="secondary-button" id="undo-outlook-archive" type="button" hidden>Undo archive</button>
+        <p id="undo-outlook-status" role="status" aria-live="polite"></p>
+        <button class="primary-button" id="restart-demo" type="button" data-i18n="repeatDemo">Repeat demo</button><small id="undo-notice" data-i18n="undoNotice">With a real account, you would receive instructions for undoing each action.</small>
+      </div>
+    </section>
+
+    <dialog id="provider-dialog">
+      <button class="dialog-close" aria-label="Close" data-i18n-aria="close" type="button">×</button>
+      <div class="dialog-icon" aria-hidden="true">✓</div>
+      <h2 id="provider-dialog-title" data-i18n="safeModeTitle">Explore a fictional inbox</h2>
+      <p id="provider-dialog-copy" data-i18n="safeModeCopy">Use fictional data to explore the experience without connecting an account.</p>
+      <p id="provider-status" class="provider-status" role="status" aria-live="polite"></p>
+      <button class="primary-button" id="open-demo" type="button" data-i18n="openDemo">Open demo</button>
+    </dialog>
+    <dialog id="review-dialog"><button class="dialog-close" aria-label="Close" data-i18n-aria="close" type="button">×</button><p class="eyebrow" data-i18n="finalConfirmation">Final confirmation</p><h2 data-i18n="reviewActions">Review actions</h2><div class="review-summary" id="review-summary"></div><p class="dialog-warning" id="review-warning" data-i18n="reviewWarning">“Unsubscribe” is used only for authenticated lists. Suspicious senders are blocked or reported without confirming your address. Nothing is permanently deleted.</p><div class="review-loading" id="review-loading" role="status" aria-live="polite" hidden><span aria-hidden="true"></span><p id="review-loading-copy" data-i18n="reviewLoading">Checking unsubscribe options…</p></div><p class="review-action-status" id="review-action-status" role="status" aria-live="polite"></p><div id="review-unsubscribes"></div><button class="primary-button" id="confirm-actions" type="button" data-i18n="confirmCleanup">Confirm cleanup</button><button class="secondary-button" id="cancel-actions" type="button" data-i18n="goBackChange">Go back and change</button></dialog>
+
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="./vendor/msal-browser-5.17.3.min.js" defer></script>
+    <script src="./i18n.js" defer></script>
+    <script src="./unsubscribe-safety.js" defer></script>
+    <script src="./outlook-archive.js" defer></script>
+    <script src="./app.js" defer></script>
+  </body>
+</html>

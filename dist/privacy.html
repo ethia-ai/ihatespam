@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><link rel="canonical" href="https://ihatespam.site/privacy"><title>Privacy Policy — I Hate Spam</title><link rel="icon" type="image/png" href="./oauth-app-icon.png"><link rel="stylesheet" href="./styles.css?v=legal-20261020"></head>
+<body class="legal-site">
+<a class="legal-skip" href="#legal-content">Skip to content</a>
+<header class="legal-header">
+<a class="brand" href="./" aria-label="I Hate Spam home"><span class="brand-type"><span>I</span><span class="brand-thumb" aria-hidden="true">👎</span><span>SPAM</span></span></a>
+<nav class="legal-nav" aria-label="Legal pages"><a href="./privacy.html" aria-current="page">Privacy</a><a href="./terms.html">Terms</a><a class="legal-home" href="./">Back to app <span aria-hidden="true">↗</span></a></nav>
+</header>
+<main class="legal-page" id="legal-content">
+<div class="legal-hero">
+<p class="eyebrow">Privacy Policy</p>
+<h1>Your inbox is yours.</h1>
+<p class="legal-intro">How your information is accessed, handled and protected.</p>
+<p class="legal-updated">Last updated: 9 September 2026</p>
+</div>
+<div class="legal-layout">
+<nav class="legal-contents" aria-label="On this page"><p>On this page</p><ol><li><a href="#what-we-access"><span aria-hidden="true">01</span>What we access</a></li><li><a href="#how-data-is-handled"><span aria-hidden="true">02</span>How data is handled</a></li><li><a href="#unsubscribe-links"><span aria-hidden="true">03</span>Unsubscribe links</a></li><li><a href="#how-we-protect-sensitive-data"><span aria-hidden="true">04</span>How we protect sensitive data</a></li><li><a href="#google-api-limited-use"><span aria-hidden="true">05</span>Google API Limited Use</a></li><li><a href="#your-choices"><span aria-hidden="true">06</span>Your choices</a></li><li><a href="#who-operates-this-service"><span aria-hidden="true">07</span>Who operates this service</a></li></ol></nav>
+<article class="legal-article" aria-label="Privacy Policy">
+<section class="privacy-reassurance"><strong>Our promise</strong><p>We do not sell your data or train AI on your emails. Inbox analysis runs in your browser. If you choose the automatic unsubscribe workflow, our server temporarily processes the access token and message headers, including signed fields. It does not request message bodies or attachments.</p></section>
+<section class="legal-section" id="what-we-access" aria-labelledby="what-we-access-title">
+<div class="legal-section-heading"><span aria-hidden="true">01</span><h2 id="what-we-access-title">What we access</h2></div>
+<p>When you connect Gmail, the first permission lets I Hate Spam inspect message headers and labels for the latest inbox messages, not their bodies. If you approve cleanup actions, Google may ask for additional permission to change labels, move messages to Trash or create Gmail filters. You decide every action.</p>
+<p>For automatic unsubscribe, our server also asks Gmail for the account email address to validate your access token and bind the operation to your mailbox. The address is converted to a keyed identifier for abuse prevention; the server does not persist the address or access token.</p>
+<p>Outlook starts with Mail.ReadBasic and examines senders and headers for up to 100 recent inbox messages. Cleanup can ask separately for Mail.ReadWrite to move selected scanned messages from Inbox to Archive or Deleted Items, with restoration to Inbox. If you choose to send future messages automatically to Deleted Items, Microsoft also asks for MailboxSettings.ReadWrite so the application can create one Inbox rule for each exact sender address you selected. Actions run only after you review them and click Apply email actions; if Microsoft then asks for permission, approving it continues those reviewed actions automatically.</p>
+</section>
+<section class="legal-section" id="how-data-is-handled" aria-labelledby="how-data-is-handled-title">
+<div class="legal-section-heading"><span aria-hidden="true">02</span><h2 id="how-data-is-handled-title">How data is handled</h2></div>
+<p>We do not maintain a database of emails, message bodies, contacts, headers or access tokens. For automatic unsubscribe, the server reads headers directly from Gmail or Outlook using the temporary token for this operation. It does not persist that token. Encrypted short-lived plans are returned to the browser.</p>
+<p>An operational database stores only keyed opaque identifiers, counters and outcome codes to prevent abuse and repeated requests. Request counters expire after their time window; attempt records expire after 7 days. Expired records are removed on the next authorised use, so an inactive database may retain expired entries until it is used again. Hosting backups may retain these records longer.</p>
+<p>Tokens and archive/undo state otherwise remain in page memory. The language preference and a limited record of sender and account addresses that you confirm as treated are stored only on your device. Treated-sender records expire after 90 days and let later scans avoid proposing the same future action again; you can remove them by clearing this site’s browser data. Hosting and sign-in providers process connection information needed to operate their services.</p>
+<p>For Outlook moves, we request a minimal response, but Microsoft may return additional message fields. The application discards the move response without parsing or storing it and verifies the result with a separate metadata-only request. For an Outlook routing rule, the application sends only the selected sender address and reads the created rule identifier to confirm success. Access tokens and rule identifiers remain in page memory. We do not claim that write permissions technically prevent Microsoft from returning additional data.</p>
+</section>
+<section class="legal-section" id="unsubscribe-links" aria-labelledby="unsubscribe-links-title">
+<div class="legal-section-heading"><span aria-hidden="true">03</span><h2 id="unsubscribe-links-title">Unsubscribe links</h2></div>
+<p>Automatic sending currently supports Gmail messages whose unsubscribe headers are cryptographically verified and match a trusted Gmail DKIM result, with destinations limited to supported platform-controlled Beehiiv, Bloomreach, Kit and ActiveCampaign hosts. Outlook currently falls back to manual review because its receiver authentication provenance is not yet verified by this service.</p>
+<p>The sender receives the personalised unsubscribe URL and a fixed one-click request, never your mailbox access token. Public DKIM domain and selector names, and supported destination hostnames, are sent to Cloudflare DNS for validation; personalised URLs are not sent to DNS.</p>
+<p>An accepted HTTP request is not independent proof of removal from a mailing list. Unsupported or unverified requests require manual review. External pages apply their own privacy policies and may cancel the subscription on opening. A manual action is marked as treated only after you explicitly confirm that you completed it; this remains your report, not an independent verification. We do not read message bodies to find footer links.</p>
+<p>Gmail blocking uses a filter that sends future messages from the selected address to Trash. For Outlook, the service opens Microsoft’s blocked-senders settings and records the sender as treated only after your confirmation.</p>
+</section>
+<section class="legal-section" id="how-we-protect-sensitive-data" aria-labelledby="how-we-protect-sensitive-data-title">
+<div class="legal-section-heading"><span aria-hidden="true">04</span><h2 id="how-we-protect-sensitive-data-title">How we protect sensitive data</h2></div>
+<ul>
+<li><strong>Encrypted transport:</strong> the site and its mailbox API requests use HTTPS. Google access tokens are sent only to Google and, for automatic unsubscribe checks, to our own HTTPS endpoint. They are never sent to newsletter senders.</li>
+<li><strong>Limited access:</strong> Gmail analysis initially requests only gmail.metadata. Permission to modify selected messages (gmail.modify) or create sender filters (gmail.settings.basic) is requested when needed for your reviewed actions. We do not request permission to permanently delete email, and do not use the broader write permission to read message bodies, compose or send messages.</li>
+<li><strong>Token handling:</strong> access tokens are held in page memory, not browser persistent storage or our database. During automatic unsubscribe checks the server processes the token temporarily. Our application does not log tokens, message headers or message content. Closing or reloading the page clears its in-memory session; disconnecting Gmail also requests revocation.</li>
+<li><strong>Protection of unsubscribe plans:</strong> short-lived plans are encrypted and authenticated with AES-GCM. Server-keyed HMAC identifiers associate operations with the verified mailbox without persisting its address in the operational database. Encryption keys are configured as hosting secrets, not shipped to the browser.</li>
+<li><strong>Misuse prevention:</strong> the server checks the request origin and Google credential, limits request size and frequency, and checks plan expiry and single use. Before automatic unsubscribe it verifies signed headers and restricts destinations. It does not follow unsubscribe redirects or automatically retry uncertain requests.</li>
+<li><strong>Browser and storage boundaries:</strong> security headers restrict scripts and framing. Operational records contain opaque identifiers, counters and outcome codes, with the retention limits described above. The separate treated-sender history stays on your device and can be removed by clearing this site's browser data.</li>
+</ul>
+<p>No online service can promise absolute security. Hosting and identity providers operate their own infrastructure and security controls. Contact us if you suspect unauthorised access or want help removing device-local records.</p>
+</section>
+<section class="legal-section" id="google-api-limited-use" aria-labelledby="google-api-limited-use-title">
+<div class="legal-section-heading"><span aria-hidden="true">05</span><h2 id="google-api-limited-use-title">Google API Limited Use</h2></div>
+<p>I Hate Spam's use and transfer of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Google user data is used only to provide the email analysis and user-approved cleanup features described here, not for advertising, sale, or training general-purpose AI models.</p>
+</section>
+<section class="legal-section" id="your-choices" aria-labelledby="your-choices-title">
+<div class="legal-section-heading"><span aria-hidden="true">06</span><h2 id="your-choices-title">Your choices</h2></div>
+<p>You can disconnect and review each proposed action. Gmail disconnect requests token revocation. Outlook disconnect clears the application’s in-memory session without signing you out of other Microsoft services; to withdraw ongoing consent, remove the app’s access in your Microsoft account settings. Rules created for future Outlook emails remain in Outlook until you remove them in Outlook settings. You can also revoke Gmail access in your Google Account settings.</p>
+<p>Confirmed Outlook archive and Deleted Items moves can be undone on the results screen until a new scan, disconnect or reload. You can also move messages back to Inbox directly in Outlook. The application does not permanently delete messages or empty trash. Do not empty Deleted Items during the test; mailbox retention policies still apply and may limit recovery.</p>
+</section>
+<section class="legal-section" id="who-operates-this-service" aria-labelledby="who-operates-this-service-title">
+<div class="legal-section-heading"><span aria-hidden="true">07</span><h2 id="who-operates-this-service-title">Who operates this service</h2></div>
+<p>I Hate Spam is operated by Ethia. For privacy, support or Gmail authorisation questions, contact <a href="mailto:ethia.studio@gmail.com">ethia.studio@gmail.com</a>.</p>
+</section>
+<a class="legal-top" href="#legal-content">Back to top <span aria-hidden="true">↑</span></a>
+</article>
+</div>
+</main>
+<footer class="legal-footer"><p>A little less spam. A little more peace.</p><nav aria-label="Footer"><a href="./privacy.html" aria-current="page">Privacy Policy</a><a href="./terms.html">Terms of Service</a><a href="https://ethiaagency.com" target="_blank" rel="noopener noreferrer">by ETHIA Agency <span aria-hidden="true">↗</span></a></nav></footer>
+</body></html>

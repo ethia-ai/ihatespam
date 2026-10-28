@@ -1,0 +1,6 @@
+{
+  "name": "i-hate-spam-private-site",
+  "private": true,
+  "scripts": { "build": "node scripts/build-security-worker.cjs", "test": "node --test tests/*.test.cjs", "db:generate": "drizzle-kit generate" },
+  "devDependencies": { "drizzle-kit": "0.31.4", "drizzle-orm": "0.44.5" }
+}
